@@ -7,7 +7,7 @@ class Helpers
 
   def self.is_logged_in?(session)
     binding.pry
-    @current_user.user_id == session[:user_id]
+    @current_user.id == session[:user_id]
   end
 
 end
