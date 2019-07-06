@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    puts session[:user_id]
+    session.is_logged_in?
     erb :account
   end
 
