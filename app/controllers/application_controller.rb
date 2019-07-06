@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
     if session.is_logged_in?(session)
       erb :account
     else
-      edirect '/error'
+      redirect '/error'
     end
   end
 
