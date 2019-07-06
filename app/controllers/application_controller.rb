@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-    puts params[:username]
+    @user = User.find_by(username: params[:username], password: params[:password])
   end
 
   get '/account' do
