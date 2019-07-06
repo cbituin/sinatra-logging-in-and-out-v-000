@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     puts session
-    puts session[:username]
+    # puts session[:username]
     erb :account
   end
 
