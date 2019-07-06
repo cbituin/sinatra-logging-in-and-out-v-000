@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-    puts params
+    puts params[:username]
   end
 
   get '/account' do
