@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    puts session[:id].to_s
+
     erb :account
   end
 
