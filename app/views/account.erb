@@ -7,6 +7,14 @@
   </head>
   <body id="page-top">
 
+  <% if session.is_logged_in? %>
+  Welcome, <%= session[:username] %>!
+  Current balance: <%= session[:balance] %>
+
+  <% else %>
+  <a href="/">Go back.</a>
+
+  <% end %>
 
 
 
